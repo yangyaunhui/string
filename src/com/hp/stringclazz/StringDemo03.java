@@ -60,6 +60,26 @@ public class StringDemo03 {
         String s = String.valueOf(u);
         System.out.println("s = " + s+1);
 
+        //split() 分割数组
+        String nn = "xiaohuihui.avi";
+        String[] split = nn.split("\\.");
+        for (String s1 : split) {
+            System.out.println("s1 = " + s1);
+        }
+        //练习:{"username":"tangseng","age":"500"}
+        //QuJingRen 类 --->username age
+
+        //数据替换
+        String mm = "tmd,我爱你"; //甜蜜的
+        String mmstr = mm.replaceAll("[a-zA-z0-9]", "甜蜜的");
+        System.out.println("mmstr = " + mmstr);
+        System.out.println(mm);
+
+        //数据包含
+        String mmo = "我想静静";
+        boolean jj = mmo.contains("静静");
+        System.out.println("jj = " + jj);
+
         //写一个private方法,需要传一个string的网址参数，返回处理后的数据
         //假定 大数据截取了 很多网址 我想要 WWW ------
         //有以下 几类网址
